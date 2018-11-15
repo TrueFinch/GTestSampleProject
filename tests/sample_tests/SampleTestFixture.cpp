@@ -4,9 +4,11 @@
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+#include "../../src/ClassToTest.h"
 
 class SampleTestFixture : public ::testing::Test {
 public:
+    ClassToTest obj;
     SampleTestFixture() {}
 
     virtual void SetUp() {
